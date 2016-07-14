@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Are You Dead</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="site.css" media="screen" title="AreYouDead style sheet" charset="utf-8">
+    <link rel="stylesheet" href="tablet.css" media="screen" title="AreYouDead style sheet" charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js" charset="utf-8"></script>
+    <script src="areyoudead.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+  </head>
+  <body>
+  <div class="header">
+      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+          <a class="pure-menu-heading" href="">ARE YOU DEAD</a>
+
+          <ul class="pure-menu-list">
+              <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+              <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+              <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="container">
+      <p />
+      <div class="pure-g" v-for="endpoint in endpoints" id="endpoints">
+        <div class="pure-u-1-3"><p style="font-size: 16pt; ">{{ endpoint.name }}</p></div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-0">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-1">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-2">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-3">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-4">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-5">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-6">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-7">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-8">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-9">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-10">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-11">X</div>
+        <div class="pure-u-1-24 notdeadyet unhealthy fade-12">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-13">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-14">X</div>
+        <div class="pure-u-1-24 notdeadyet healthy fade-15">X</div>
+      </div>
+    </div>
+  </body>
+</html>
